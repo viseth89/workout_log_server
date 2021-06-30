@@ -97,8 +97,8 @@ router.delete('/delete/:id', validateJWT, async(req, res) => {
     try {
         const query = {
             where: {
-                id: journalId,
-                owner: ownerId
+                id: logId,
+                owner_id: ownerId
             }
         };
 
